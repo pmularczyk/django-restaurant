@@ -1,0 +1,74 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mapid {
+    height: 500px;
+}
+
+/* Containers */
+#nav-section.container-fluid {
+    padding: 0% 0%;
+}
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.navbar-custom-pd {
+    padding: 1% 15%;
+}
+
+
+/* Background Colors */
+.colored-section-shippo {
+    /* background-color:#def;
+    background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+    radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+    background-size:80px 80px;
+    background-position:0 0, 40px 40px; */
+    background-color: #f0f0f0;
+background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.colored-section-seigaiha {
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.white.section {
+    background-color: #cbd5db;
+}
+
+/* Title Section */
+
+/* About Section */
+.about-text {
+    text-align: center;
+}
+.fitted-img {
+    width: 100%;
+    background-color: #eee;
+}
+
+.column-color-box {
+    background-color: #cbd5db;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/* Feature Carousel */
+.carousel-item {
+    text-align: center;
+}
+.carousel-item img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item h3 {
+    font-size: 3rem;
+    line-height: 1.5;
+}

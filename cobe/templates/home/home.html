@@ -1,0 +1,202 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<!-- Main Title -->
+<div id="title-section" class="container-fluid colored-section-shippo">
+  <h1>Herzlich willkommen im Cô-Bé Restaurant</h1>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="title-entry-hours">
+        <h2 class="title">ÖFFNUNGSZEITEN</h2>
+        <ul class="list-unstyled opening-hours">
+          <li>
+            Montag <span class="float-right">11:30-14:30 und 17:30-23:00 </span>
+          </li>
+          <li>
+            Dienstag
+            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
+          </li>
+          <li>
+            Mittwoch
+            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
+          </li>
+          <li>
+            Donnerstag
+            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
+          </li>
+          <li>
+            Freitag <span class="float-right">11:30-14:30 und 17:30-23:00</span>
+          </li>
+          <li>
+            Samstag <span class="float-right">12:00-15:00 und 17:30-23:00</span>
+          </li>
+          <li>
+            Sonntag <span class="float-right">12:00-15:00 und 17:00-23:00</span>
+          </li>
+        </ul>
+        <div class="title-entry-number">
+          <h2 class="title">TELEFONNUMMER</h2>
+          <ul class="list-unstyled">
+            <li>
+              +49 89 39290268
+            </li>
+            <li>
+              +49 159 06718116
+            </li>
+          </ul>
+        </div>
+
+        <div class="title-entry-address">
+          <h2 class="title">ADDRESSE</h2>
+          <ul class="list-unstyled">
+            <li>
+              Kurfürstenstraße 47
+            </li>
+            <li>
+              80801 München
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img
+        class="img-fluid rounded title-img"
+        src="{% static 'home/img/logo2.png' %}"
+        alt="Restaurant-Logo"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<div id="about-section" class="container-fluid colored-section-seigaiha">
+  <h1>Über Uns</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <img
+        class="img-fluid rounded fitted-img"
+        src=""
+        alt="Restaurant-Staff"
+      />
+    </div>
+    <div class="col-md-6">
+      <img
+        class="img-fluid rounded fitted-img"
+        src=""
+        alt="Restaurant-Woman"
+      />
+    </div>
+  </div>
+
+  <div class="row about-text">
+    <div class="col-md-6 column-color-box">
+      <p>
+        Cô Bé, zu Deutsch "Fräulein", ist ein kleines Restaurant, das
+        traditionelle vietnamesische Küche im Herzen von Schwabing anbietet. Es
+        liegt zwischen dem Kurfürstenplatz und Elisabethplatz in München. Wir
+        bieten Ihnen vietnamesische Kost, ob mit Fleisch oder vegetarisch, zu
+        guten Preisen und legen sehr viel Wert auf gesunde Kost. Das heißt
+        unsere Speisen werden ohne Geschmacksverstärker zubereitet.
+      </p>
+    </div>
+    <div class="col-md-6 column-color-box">
+      <p>
+        Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
+        angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
+        Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé Restaurant Team.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Feature Carousel/ Galerie -->
+
+<div id="feature-section" class="container-fluid">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="false">
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleCaptions"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active contaier-fluid">
+        <h3>Bester Service in gemütlicher Umgebung</h3>
+        <p>
+          Wir geben alles, um unseren Gästen den Aufenthalt so angenehm wie
+          möglich zu gestalten. Sie haben einen speziellen Wunsch oder besondere
+          Ernährungsbedürfnisse? Wenden Sie sich getrost an uns!
+        </p>
+        <img src="{% static 'home/img/shrimp.png' %}" alt="Pho-Suppe" />
+      </div>
+
+      <div class="carousel-item contaier-fluid">
+        <h3>Frische Sommerrollen - hausgemacht</h3>
+        <p>
+          Wir freuen uns, Sie mit unseren besten Gerichten, hausgemacht,
+          verwöhnen zu dürfen. Wir kochen ohne Glutamat. Besuchen Sie uns und
+          erleben Sie den Zauber Vietnams!
+        </p>
+        <img
+          src="{% static 'home/img/sommerrollen.png' %}"
+          alt="Sommerrollen"
+        />
+      </div>
+
+      <div class="carousel-item contaier-fluid">
+        <h3>Partys und Feste, bei uns kein Problem!</h3>
+        <p>
+          Sie wollen eine Feier ausrichten und suchen noch den richtigen Rahmen
+          dafür? Bei uns sind Sie genau richtig: Unser gesamtes Team steht zu
+          Ihrer Verfügung, damit Ihre Feier zu einem einmaligen Erlebnis wird.
+        </p>
+        <img
+          src="{% static 'home/img/fruehlingsrollen.png' %}"
+          alt="Fruehlingsrollen"
+        />
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+<!-- Speisekarte -->
+<div id="menu-section" class="container-fluid">
+  here there should be a download button <br>
+  and a link to a pdf viewer
+</div>
+<!-- Reservation -->
+<div id="reservation-section" class="container-fluid">
+  Here would be the contact form
+  <a href="{% url 'contact' %}">Reservierung</a>
+</div>
+<!-- Map -->
+<div class="container-fluid">
+  <div id="mapid"></div>
+</div>
+{% endblock content %}
