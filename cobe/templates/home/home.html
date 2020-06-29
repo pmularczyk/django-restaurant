@@ -1,41 +1,56 @@
-{% extends "base.html" %} {% load static %} {% block content %}
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
 
 <!-- Main Title -->
 <div id="title-section" class="container-fluid colored-section-shippo">
   <h1>Herzlich willkommen im Cô-Bé Restaurant</h1>
 
   <div class="row">
+
     <div class="col-lg-6">
-      <div class="title-entry-hours">
-        <h2 class="title">ÖFFNUNGSZEITEN</h2>
-        <ul class="list-unstyled opening-hours">
-          <li>
-            Montag <span class="float-right">11:30-14:30 und 17:30-23:00 </span>
-          </li>
-          <li>
-            Dienstag
-            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
-          </li>
-          <li>
-            Mittwoch
-            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
-          </li>
-          <li>
-            Donnerstag
-            <span class="float-right">11:30-14:30 und 17:30-23:00</span>
-          </li>
-          <li>
-            Freitag <span class="float-right">11:30-14:30 und 17:30-23:00</span>
-          </li>
-          <li>
-            Samstag <span class="float-right">12:00-15:00 und 17:30-23:00</span>
-          </li>
-          <li>
-            Sonntag <span class="float-right">12:00-15:00 und 17:00-23:00</span>
-          </li>
-        </ul>
+
+      <div class="title-information">
+        <div class="title-entry-openings">
+          <h3>Unsere Öffnungszeiten</h3>
+        <div class="table-responsive">
+          <table class="table table-striped">
+
+            <tbody>
+              <tr>
+                <td>Montag bis Freitag</td>
+                <td>11:30 - 14:30</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>17:30 - 23:00</td>
+              </tr>
+              <tr>
+                <td>Samstag</td>
+                <td>12:00 - 15:00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>17:30 - 23:00</td>
+              </tr>
+              <tr>
+                <td>Sonntag</td>
+                <td>12:00 - 15:00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>17:00 - 23:00</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+        </div>
+
         <div class="title-entry-number">
-          <h2 class="title">TELEFONNUMMER</h2>
+          <h3 class="title">Rufen Sie uns an!</h3>
           <ul class="list-unstyled">
             <li>
               +49 89 39290268
@@ -47,7 +62,7 @@
         </div>
 
         <div class="title-entry-address">
-          <h2 class="title">ADDRESSE</h2>
+          <h3 class="title">Kommen Sie vorbei!</h3>
           <ul class="list-unstyled">
             <li>
               Kurfürstenstraße 47
@@ -57,14 +72,26 @@
             </li>
           </ul>
         </div>
+
       </div>
+
+
+
+
+
     </div>
     <div class="col-lg-6">
-      <img
-        class="img-fluid rounded title-img"
-        src="{% static 'home/img/logo2.png' %}"
-        alt="Restaurant-Logo"
-      />
+
+      <div class="center-container ">
+        <div class="absolute-center">
+          <img
+          class="img-fluid rounded"
+          src="{% static 'home/img/staff.png' %}"
+          alt="Restaurant-Logo"
+        />
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -74,18 +101,10 @@
   <h1>Über Uns</h1>
   <div class="row">
     <div class="col-md-6">
-      <img
-        class="img-fluid rounded fitted-img"
-        src=""
-        alt="Restaurant-Staff"
-      />
+      <img class="img-fluid rounded fitted-img" src="" alt="Restaurant-Staff" />
     </div>
     <div class="col-md-6">
-      <img
-        class="img-fluid rounded fitted-img"
-        src=""
-        alt="Restaurant-Woman"
-      />
+      <img class="img-fluid rounded fitted-img" src="" alt="Restaurant-Woman" />
     </div>
   </div>
 
@@ -104,18 +123,22 @@
       <p>
         Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
         angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
-        Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé Restaurant Team.
+        Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé
+        Restaurant Team.
       </p>
     </div>
   </div>
 </div>
 
-
 <!-- Feature Carousel/ Galerie -->
 
 <div id="feature-section" class="container-fluid">
-
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="false">
+  <div
+    id="carouselExampleCaptions"
+    class="carousel slide"
+    data-ride="false"
+    data-interval="false"
+  >
     <ol class="carousel-indicators">
       <li
         data-target="#carouselExampleCaptions"
@@ -128,8 +151,8 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active contaier-fluid">
-        <h3>Bester Service in gemütlicher Umgebung</h3>
-        <p>
+        <h3 class="feature-title">Bester Service in gemütlicher Umgebung</h3>
+        <p class="feature-text">
           Wir geben alles, um unseren Gästen den Aufenthalt so angenehm wie
           möglich zu gestalten. Sie haben einen speziellen Wunsch oder besondere
           Ernährungsbedürfnisse? Wenden Sie sich getrost an uns!
@@ -138,8 +161,8 @@
       </div>
 
       <div class="carousel-item contaier-fluid">
-        <h3>Frische Sommerrollen - hausgemacht</h3>
-        <p>
+        <h3 class="feature-title">Frische Sommerrollen - hausgemacht</h3>
+        <p class="feature-text">
           Wir freuen uns, Sie mit unseren besten Gerichten, hausgemacht,
           verwöhnen zu dürfen. Wir kochen ohne Glutamat. Besuchen Sie uns und
           erleben Sie den Zauber Vietnams!
@@ -151,8 +174,8 @@
       </div>
 
       <div class="carousel-item contaier-fluid">
-        <h3>Partys und Feste, bei uns kein Problem!</h3>
-        <p>
+        <h3 class="feature-title">Partys und Feste, bei uns kein Problem!</h3>
+        <p class="feature-text">
           Sie wollen eine Feier ausrichten und suchen noch den richtigen Rahmen
           dafür? Bei uns sind Sie genau richtig: Unser gesamtes Team steht zu
           Ihrer Verfügung, damit Ihre Feier zu einem einmaligen Erlebnis wird.
@@ -182,21 +205,32 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
 </div>
 
 <!-- Speisekarte -->
 <div id="menu-section" class="container-fluid">
-  here there should be a download button <br>
-  and a link to a pdf viewer
+  <h3>Unsere Speisekarte</h3>
+  <hr class="mx-auto w-75">
+      <button type="button" class="btn btn-outline-success btn-md download-button">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>  Download
+      </button>
+      <button type="button" class="btn btn-outline-success btn-md download-button">
+         View PDF
+      </button>
 </div>
 <!-- Reservation -->
 <div id="reservation-section" class="container-fluid">
-  Here would be the contact form
-  <a href="{% url 'contact' %}">Reservierung</a>
+  <h3>Reservieren Sie jetzt!</h3>
+  <hr class="mx-auto w-75">
+  <buttontype="button" class="btn btn-outline-success btn-md download-button">
+    <a href="{% url 'contact' %}">Hier Reservieren</a>
+  </buttontype=>
 </div>
+
 <!-- Map -->
-<div class="container-fluid">
+<div id="map-section" class="container-fluid">
+  <h3>Hier können Sie uns finden!</h3>
+  <hr class="mx-auto w-75">
   <div id="mapid"></div>
 </div>
 {% endblock content %}
