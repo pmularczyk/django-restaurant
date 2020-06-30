@@ -3,13 +3,15 @@
 {% load static %}
 {% block content %}
 
-<!-- Main Title -->
-<div id="title-section" class="container-fluid colored-section-shippo">
-  <h1>Herzlich willkommen im Cô-Bé Restaurant</h1>
+<!-- Main Title colored-section-shippo -->
+<div id="title-section" class="container-fluid pho-soup-bg-img">
+  <div class="opening-title container-fluid">
+    <h1>Herzlich willkommen im Cô-Bé Restaurant</h1>
+  </div>
 
   <div class="row">
 
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-12">
 
       <div class="title-information">
         <div class="title-entry-openings">
@@ -49,43 +51,34 @@
         </div>
         </div>
 
-        <div class="title-entry-number">
-          <h3 class="title">Rufen Sie uns an!</h3>
-          <ul class="list-unstyled">
-            <li>
-              +49 89 39290268
-            </li>
-            <li>
-              +49 159 06718116
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-lg-6"><div class="title-entry-number">
+            <h4 class="title">Rufen Sie uns an!</h4>
+            <p>
+              089 39290268  |  0159 06718116
+            </p>
+          </div></div>
+          <div class="col-lg-6"><div class="title-entry-address">
+            <h4 class="title">Kommen Sie vorbei!</h4>
+            <p>Kurfürstenstraße 47, <br> 80801 München</p>
+          </div></div>
+
         </div>
 
-        <div class="title-entry-address">
-          <h3 class="title">Kommen Sie vorbei!</h3>
-          <ul class="list-unstyled">
-            <li>
-              Kurfürstenstraße 47
-            </li>
-            <li>
-              80801 München
-            </li>
-          </ul>
-        </div>
+
+
+
 
       </div>
-
-
-
-
-
     </div>
-    <div class="col-lg-6">
+
+
+    <div class="col-lg-6 col-md-12">
 
       <div class="center-container ">
         <div class="absolute-center">
           <img
-          class="img-fluid rounded"
+          class="img-fluid rounded title-img"
           src="{% static 'home/img/staff.png' %}"
           alt="Restaurant-Logo"
         />
@@ -96,38 +89,49 @@
   </div>
 </div>
 
-<!-- About -->
-<div id="about-section" class="container-fluid colored-section-seigaiha">
-  <h1>Über Uns</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <img class="img-fluid rounded fitted-img" src="" alt="Restaurant-Staff" />
-    </div>
-    <div class="col-md-6">
-      <img class="img-fluid rounded fitted-img" src="" alt="Restaurant-Woman" />
-    </div>
+<!-- About colored-section-seigaiha -->
+<div id="about-section" class="container-fluid ">
+  <div class="about-title">
+    <h1>Über Uns</h1>
   </div>
 
-  <div class="row about-text">
-    <div class="col-md-6 column-color-box">
-      <p>
-        Cô Bé, zu Deutsch "Fräulein", ist ein kleines Restaurant, das
-        traditionelle vietnamesische Küche im Herzen von Schwabing anbietet. Es
-        liegt zwischen dem Kurfürstenplatz und Elisabethplatz in München. Wir
-        bieten Ihnen vietnamesische Kost, ob mit Fleisch oder vegetarisch, zu
-        guten Preisen und legen sehr viel Wert auf gesunde Kost. Das heißt
-        unsere Speisen werden ohne Geschmacksverstärker zubereitet.
-      </p>
+  <div class="row">
+    <div class="col-md-6 about-column">
+
+      <div class="card mx-auto">
+          <img src="{% static 'home/img/woman.png' %}" class="card-img about-img" alt="Restaurant-Staff">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Cô Bé, zu Deutsch "Fräulein", ist ein kleines Restaurant, das
+              traditionelle vietnamesische Küche im Herzen von Schwabing anbietet. Es
+              liegt zwischen dem Kurfürstenplatz und Elisabethplatz in München. Wir
+              bieten Ihnen vietnamesische Kost, ob mit Fleisch oder vegetarisch, zu
+              guten Preisen und legen sehr viel Wert auf gesunde Kost. Das heißt
+              unsere Speisen werden ohne Geschmacksverstärker zubereitet.
+            </p>
+          </div>
+
+      </div>
+
     </div>
-    <div class="col-md-6 column-color-box">
-      <p>
-        Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
-        angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
-        Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé
-        Restaurant Team.
-      </p>
+
+    <div class="col-md-6 about-column">
+      <div class="card mx-auto">
+        <img src="{% static 'home/img/staff.png' %}" class="card-img-top about-img" alt="Restaurant-Staff">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
+            angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
+            Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé
+            Restaurant Team.</p>
+        </div>
+      </div>
     </div>
+
   </div>
+
+  <!-- img-fluid rounded fitted-img -->
 </div>
 
 <!-- Feature Carousel/ Galerie -->
