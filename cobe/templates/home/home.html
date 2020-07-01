@@ -1,240 +1,254 @@
 {% extends "base.html" %}
-
 {% load static %}
 {% block content %}
 
-<!-- Main Title colored-section-shippo -->
-<div id="title-section" class="container-fluid pho-soup-bg-img">
-  <div class="opening-title container-fluid">
-    <h1>Herzlich willkommen im Cô-Bé Restaurant</h1>
+<!-- Main Title -->
+<section id="title">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="title-box col-lg-6 order-lg-1 order-md-12 order-sm-12">
+        <div>
+          <h1>Herzlich willkommen</h1>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-success btn-lg ">
+            Kontaktieren Sie uns
+          </button>
+        </div>
+      </div>
+
+      <div class="title-box col-lg-6 order-lg-12 order-md-1 order-sm-1">
+        <div>
+          <img src="{% static 'home/img/selbstrollen.png' %}" alt="Frühlungsrollen zum Selbstrollen">
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="row">
+</section>
 
-    <div class="col-lg-6 col-md-12">
 
-      <div class="title-information">
-        <div class="title-entry-openings">
-          <h3>Unsere Öffnungszeiten</h3>
-        <div class="table-responsive">
-          <table class="table table-striped">
 
-            <tbody>
-              <tr>
-                <td>Montag bis Freitag</td>
-                <td>11:30 - 14:30</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>17:30 - 23:00</td>
-              </tr>
-              <tr>
-                <td>Samstag</td>
-                <td>12:00 - 15:00</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>17:30 - 23:00</td>
-              </tr>
-              <tr>
-                <td>Sonntag</td>
-                <td>12:00 - 15:00</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>17:00 - 23:00</td>
-              </tr>
+<!-- About -->
+<section id="about">
 
-            </tbody>
-          </table>
+  <div class="container">
 
-        </div>
-        </div>
+    <div class="row">
 
-        <div class="row">
-          <div class="col-lg-6"><div class="title-entry-number">
-            <h4 class="title">Rufen Sie uns an!</h4>
+      <div class="about-img-container col-lg-6">
+        <img src="{% static 'home/img/pho.png' %}" alt="Pho Suppe">
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="about-text-container">
+          <div>
+            <h2>Über Uns</h2>
+          </div>
+          <div>
             <p>
-              089 39290268  |  0159 06718116
-            </p>
-          </div></div>
-          <div class="col-lg-6"><div class="title-entry-address">
-            <h4 class="title">Kommen Sie vorbei!</h4>
-            <p>Kurfürstenstraße 47, <br> 80801 München</p>
-          </div></div>
-
-        </div>
-
-
-
-
-
-      </div>
-    </div>
-
-
-    <div class="col-lg-6 col-md-12">
-
-      <div class="center-container ">
-        <div class="absolute-center">
-          <img
-          class="img-fluid rounded title-img"
-          src="{% static 'home/img/staff.png' %}"
-          alt="Restaurant-Logo"
-        />
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- About colored-section-seigaiha -->
-<div id="about-section" class="container-fluid ">
-  <div class="about-title">
-    <h1>Über Uns</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6 about-column">
-
-      <div class="card mx-auto">
-          <img src="{% static 'home/img/woman.png' %}" class="card-img about-img" alt="Restaurant-Staff">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
               Cô Bé, zu Deutsch "Fräulein", ist ein kleines Restaurant, das
               traditionelle vietnamesische Küche im Herzen von Schwabing anbietet. Es
-              liegt zwischen dem Kurfürstenplatz und Elisabethplatz in München. Wir
-              bieten Ihnen vietnamesische Kost, ob mit Fleisch oder vegetarisch, zu
+              liegt zwischen dem Kurfürstenplatz und Elisabethplatz in München.
+            </p>
+          </div>
+          <div>
+            <h2>Unser Service</h2>
+          </div>
+          <div>
+            <p>
+              Wir bieten Ihnen vietnamesische Kost, ob mit Fleisch oder vegetarisch, zu
               guten Preisen und legen sehr viel Wert auf gesunde Kost. Das heißt
               unsere Speisen werden ohne Geschmacksverstärker zubereitet.
             </p>
           </div>
-
-      </div>
-
-    </div>
-
-    <div class="col-md-6 about-column">
-      <div class="card mx-auto">
-        <img src="{% static 'home/img/staff.png' %}" class="card-img-top about-img" alt="Restaurant-Staff">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
-            angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
-            Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé
-            Restaurant Team.</p>
+          <div>
+            <h2>Genießen Sie ein Stück Vietnam</h2>
+          </div>
+          <div>
+            <p>
+              Sie möchten einen schönen Abend mit ihrer Familie und Ihren Freunden in
+              angenehmer Atmosphäre verbringen? Unser Team freut sich darauf Ihnen ein
+              Stück Vietnam näher zu bringen! Guten Appetit wünscht ihr Cô-Bé
+              Restaurant Team.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
 
+      </div>
+
+    </div>
   </div>
 
-  <!-- img-fluid rounded fitted-img -->
-</div>
+</section>
 
 <!-- Feature Carousel/ Galerie -->
+<section id="gallery">
 
-<div id="feature-section" class="container-fluid">
-  <div
-    id="carouselExampleCaptions"
-    class="carousel slide"
-    data-ride="false"
-    data-interval="false"
-  >
-    <ol class="carousel-indicators">
-      <li
-        data-target="#carouselExampleCaptions"
-        data-slide-to="0"
-        class="active"
-      ></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
+  <div class="container">
+    <div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="false" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active contaier-fluid">
-        <h3 class="feature-title">Bester Service in gemütlicher Umgebung</h3>
-        <p class="feature-text">
-          Wir geben alles, um unseren Gästen den Aufenthalt so angenehm wie
-          möglich zu gestalten. Sie haben einen speziellen Wunsch oder besondere
-          Ernährungsbedürfnisse? Wenden Sie sich getrost an uns!
-        </p>
-        <img src="{% static 'home/img/shrimp.png' %}" alt="Pho-Suppe" />
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="feature-header">
+              <h3>Bester Service in gemütlicher Umgebung</h3>
+            </div>
+            <div class="feature-text">
+              <p>
+                Wir geben alles, um unseren Gästen den Aufenthalt so angenehm wie
+                möglich zu gestalten. Sie haben einen speziellen Wunsch oder besondere
+                Ernährungsbedürfnisse? Wenden Sie sich getrost an uns!
+              </p>
+            </div>
+            <img src="{% static 'home/img/shrimp.png' %}" alt="Pho-Suppe" />
+          </div>
+
+          <div class="carousel-item">
+            <div class="feature-header">
+              <h3>Frische Sommerrollen - hausgemacht</h3>
+            </div>
+            <div class="feature-text">
+              <p>
+                Wir freuen uns, Sie mit unseren besten Gerichten, hausgemacht, verwöhnen
+                zu dürfen. Wir kochen ohne Glutamat. Besuchen Sie uns und erleben Sie
+                den Zauber Vietnams!
+              </p>
+            </div>
+            <img src="{% static 'home/img/sommerrollen.png' %}" alt="Sommerrollen" />
+          </div>
+
+          <div class="carousel-item">
+            <div class="feature-header">
+              <h3>Partys und Feste, bei uns kein Problem!</h3>
+            </div>
+            <div class="feature-text">
+              <p>
+                Sie wollen eine Feier ausrichten und suchen noch den richtigen Rahmen
+                dafür? Bei uns sind Sie genau richtig: Unser gesamtes Team steht zu
+                Ihrer Verfügung, damit Ihre Feier zu einem einmaligen Erlebnis wird.
+              </p>
+            </div>
+            <img src="{% static 'home/img/fruehlingsrollen.png' %}" alt="Fruehlingsrollen" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
 
-      <div class="carousel-item contaier-fluid">
-        <h3 class="feature-title">Frische Sommerrollen - hausgemacht</h3>
-        <p class="feature-text">
-          Wir freuen uns, Sie mit unseren besten Gerichten, hausgemacht,
-          verwöhnen zu dürfen. Wir kochen ohne Glutamat. Besuchen Sie uns und
-          erleben Sie den Zauber Vietnams!
-        </p>
-        <img
-          src="{% static 'home/img/sommerrollen.png' %}"
-          alt="Sommerrollen"
-        />
-      </div>
-
-      <div class="carousel-item contaier-fluid">
-        <h3 class="feature-title">Partys und Feste, bei uns kein Problem!</h3>
-        <p class="feature-text">
-          Sie wollen eine Feier ausrichten und suchen noch den richtigen Rahmen
-          dafür? Bei uns sind Sie genau richtig: Unser gesamtes Team steht zu
-          Ihrer Verfügung, damit Ihre Feier zu einem einmaligen Erlebnis wird.
-        </p>
-        <img
-          src="{% static 'home/img/fruehlingsrollen.png' %}"
-          alt="Fruehlingsrollen"
-        />
-      </div>
     </div>
-    <a
-      class="carousel-control-prev"
-      href="#carouselExampleCaptions"
-      role="button"
-      data-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a
-      class="carousel-control-next"
-      href="#carouselExampleCaptions"
-      role="button"
-      data-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
 
-<!-- Speisekarte -->
-<div id="menu-section" class="container-fluid">
-  <h3>Unsere Speisekarte</h3>
-  <hr class="mx-auto w-75">
-      <button type="button" class="btn btn-outline-success btn-md download-button">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>  Download
+</section>
+
+<!-- Opening Hours -->
+<section id="opening-hours">
+  <div class="container">
+    <div class="opening-hours-header">
+      <h3>Unsere Öffnungszeiten</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>Montag bis Freitag</td>
+            <td>11:30 - 14:30</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>17:30 - 23:00</td>
+          </tr>
+          <tr>
+            <td>Samstag</td>
+            <td>12:00 - 15:00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>17:30 - 23:00</td>
+          </tr>
+          <tr>
+            <td>Sonntag</td>
+            <td>12:00 - 15:00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>17:00 - 23:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<!-- Menu / Reservation -->
+<section id="call-to-action">
+
+  <div class="container">
+    <div class="menu-header">
+      <h3>Unsere Speisekarte</h3>
+    </div>
+    <hr class="mx-auto w-75">
+
+    <div class="button-left">
+      <button type="button" class="btn btn-outline-success btn-lg ">
+        <i class="fa fa-download" aria-hidden="true"></i>  <a href="{% static 'home/pdf/Speisekarte.pdf' %}" download="Speisekarte.pdf"> Download</a>
       </button>
-      <button type="button" class="btn btn-outline-success btn-md download-button">
-         View PDF
+    </div>
+
+    <div class="button-right">
+      <button type="button" class="btn btn-outline-success btn-lg ">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>  View PDF
       </button>
-</div>
-<!-- Reservation -->
-<div id="reservation-section" class="container-fluid">
-  <h3>Reservieren Sie jetzt!</h3>
-  <hr class="mx-auto w-75">
-  <buttontype="button" class="btn btn-outline-success btn-md download-button">
-    <a href="{% url 'contact' %}">Hier Reservieren</a>
-  </buttontype=>
-</div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="reservation-header">
+      <h3>Reservieren Sie jetzt!</h3>
+    </div>
+    <hr class="mx-auto w-75">
+    <div class="reservation-button">
+      <button type="button" class="btn btn-outline-success btn-lg ">
+        <a href="{% url 'contact' %}">Hier Reservieren</a>
+      </button>
+    </div>
+  </div>
+</section>
+
 
 <!-- Map -->
-<div id="map-section" class="container-fluid">
-  <h3>Hier können Sie uns finden!</h3>
-  <hr class="mx-auto w-75">
-  <div id="mapid"></div>
-</div>
+<section id="map">
+  <div class="container">
+    <div class="map-header">
+      <h3>Hier können Sie uns finden!</h3>
+    </div>
+    <hr class="mx-auto w-75">
+    <div id="mapid"></div>
+  </div>
+</section>
+
 {% endblock content %}

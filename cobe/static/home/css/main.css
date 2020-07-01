@@ -5,125 +5,233 @@
     #fcf876 sunny yellow
     #f4f6ff greyish blue
 */
-
+/* General */
 body {
+    margin: 0;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+hr {
+    width: 60%;
+}
+/* General Positioning */
+#gallery, #call-to-action, #map {
+    text-align: center;
+}
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1020px;
+    margin: 0 auto;
+    border: 2px solid magenta;
+}
+/* Navbar */
+#navigation nav {
+    padding-right: 0;
+    padding-left: 0;
+    background-image: linear-gradient(to bottom right, #f7f7f7, #e8e9eb);
+}
+
+/* Title */
+#title {
+    margin-top: 62.6px;
+    background-color: #f7f7f7;
+}
+#title img {
+    width: 100%;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 2%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+#title .title-box {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#title h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: darkslategray;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#title p {
+    font-size: 1.25rem;
+    padding-right: 3rem;
+}
+
+#title button {
+    margin-bottom: 20px;
+}
+
+/* About */
+#about img {
+    width: 100%;
+}
+
+#about p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-right: 3rem;
+}
+
+#about h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: darkslategray;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.about-img-container {
+    padding-left: 0;
+}
+
+.about-text-container {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+/* Gallery */
+#gallery .container {
+    margin-top: 30px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: darkslategray;
+    line-height: 1.5;
+    padding: 0% 7%;
+    margin-top: 10px;
+}
+
+.feature-text {
+    font-size: 1rem;
+    padding: 0% 10%;
+}
+/* Call to Action */
+#call-to-action .container {
+    padding: 1rem;
+}
+
+#call-to-action h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: darkslategray;
+    line-height: 1.5;
+}
+
+#call-to-action a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-left {
+    display: inline;
+    padding-right: 2%;
+}
+
+.button-right {
+    display: inline;
+    padding-left: 2%;
+}
+/* Map */
+#map .container {
+    padding: 1rem;
+}
+
+#map h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: darkslategray;
+    line-height: 1.5;
 }
 
 #mapid {
     height: 500px;
 }
 
-/* Containers */
-#nav-section.container-fluid {
-    padding: 0% 0%;
-}
-.container-fluid {
-    padding: 7% 15%;
-}
-.navbar-custom-pd {
-    padding: 1% 15%;
+/* Form */
+.contact-form {
+    margin-top: 62.6px;
 }
 
+/* Footer */
 
-/* Background Colors */
-.colored-section-shippo {
-    /* background-color:#def;
-    background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
-    radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
-    background-size:80px 80px;
-    background-position:0 0, 40px 40px; */
-    background-color: #f0f0f0;
-    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-.colored-section-seigaiha {
-    background-color: #f0f0f0;
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-.white.section {
-    background-color: #cbd5db;
+/* Breakpoints */
+@media (max-width: 1155px) {
+    #about img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
 }
 
-/* Title Section */
-#title-section h1 {
-    margin-top: 18px;
-}
-.title-information {
-    margin: 3rem 0;
-}
-.title-img {
-    box-shadow: 10px 10px 5px grey;
-}
+@media (max-width: 992px) {
+    body {
+        text-align: center;
+    }
 
-.center-container {
-    padding: 3rem 0;
-}
+    nav.navbar {
+        text-align: left;
+    }
 
-.opening-title{
-    padding-left: 0;
-    font-weight: 900;
-}
+    /* Title */
+    #title {
+        margin-top: 60.17px;
+    }
 
-.absolute-center {
-    text-align: center;
-    padding: 2rem 0;
-}
+    #title img {
+        margin-bottom: auto;
+        margin-top: auto;
+    }
 
-/* About Section */
-.about-column {
-    text-align: center;
-}
-.card {
-    width: auto;
-    margin-bottom: 14px;
-    box-shadow: 10px 10px 5px grey;
-}
+    #about img {
+        display: none;
+    }
+    /* About */
+    #about p {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        padding-right: 3rem;
+    }
 
-.embed-responsive .card-img-top {
-    object-fit: cover;
-}
+    #about h2 {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: darkslategray;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 
-/* Feature Carousel */
-.carousel-item {
-    text-align: center;
-}
-.carousel-item img {
-    width: 50%;
-    border-radius: 100%;
-    margin: 20px;
-}
-.carousel-item h3 {
-    font-size: 26px;
-    line-height: 1.5;
-    padding: 0% 7%;
-}
+    .about-text-container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    /* Gallery */
+    #gallery p {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        padding: 0% 2%;
+    }
 
-.feature-text {
-    padding: 0% 5%;
-    margin-top: 10px;
-}
-
-/* Menu Section */
-#menu-section {
-    text-align: center;
-}
-
-.download-button {
-    margin: 1% 3% 5% 3%;
-}
-
-/* Reservation Section*/
-#reservation-section {
-    text-align: center;
-}
-
-#reservation-section a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-/* Map Section*/
-#map-section {
-    text-align: center;
+    #gallery h3 {
+        font-weight: 600;
+        font-size: 2.25rem;
+        color: darkslategray;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
 }

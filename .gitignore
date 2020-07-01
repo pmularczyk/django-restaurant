@@ -139,5 +139,6 @@ cython_debug/
 
 # Custom
 img/
+textures/
 pdf/
 .vscode/

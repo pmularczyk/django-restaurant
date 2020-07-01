@@ -43,57 +43,22 @@
     <title>Cô-Bé Restaurant</title>
   </head>
   <body>
-    <div id="nav-section" class="container-fluid">
-      <nav
-        class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-custom-pd"
-      >
-        <a class="navbar-brand" href="{% url 'home' %}">Cô-Bé Restaurant</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto mr-4">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'home' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galerie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Speisekarte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact' %}">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Impressum</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    {% include 'partials/nav.html' %}
 
     {% block content %}
+
     {% endblock %}
 
     <!-- FOOTER -->
-    <footer class="container-fluid">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>
-        &copy; 2020 Cô-Bé Restaurant. &middot;
-        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-      </p>
+    <footer>
+      <div class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2020 Cô-Bé Restaurant. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </div>
+
     </footer>
 
     <!-- Leaflet JS -->
