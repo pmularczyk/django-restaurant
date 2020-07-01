@@ -17,19 +17,18 @@ def dsgvo(request):
     return render(request, 'home/dsgvo.html')
 
 def contact(request):
-    if request.method == 'GET':
-        form = ContactForm()
-    else:
-        form = ContactForm(request.POST)
+    form = ContactForm()
+    if request.method == 'POST':
+        form = ContactForm(request.POST or None)
         if form.is_valid():
-            from_name = form.cleaned_data['Name']
-            from_email = form.cleaned_data['Email']
-            message = form.cleaned_data['Nachricht']
+            from_name = form.cleaned_data['name']
+            from_email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
             subject = 'Reservation'
 
-            on_date = form.cleaned_data['Datum']
-            on_time = form.cleaned_data['Uhrzeit']
-            n_persons = form.cleaned_data['Personenanzahl']
+            on_date = form.cleaned_data['date']
+            on_time = form.cleaned_data['time']
+            n_persons = form.cleaned_data['guests']
             message += f'\nam {on_date}, um {on_time} Uhr für {n_persons} Personen.\nAbgeschickt von {from_name}'
             try:
                 send_mail(subject, message, from_email, ['admin@example.com'])
