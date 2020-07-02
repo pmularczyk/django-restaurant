@@ -40,10 +40,10 @@ hr {
 }
 #title img {
     width: 100%;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 10px 10px 5px grey;
     border-radius: 2%;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 #title .title-box {
     padding-top: 0.5em;
@@ -64,6 +64,10 @@ hr {
 
 #title button {
     margin-bottom: 20px;
+}
+
+.title-img {
+    padding-right: 1.5rem;
 }
 
 /* About */
@@ -122,9 +126,31 @@ hr {
     font-size: 1rem;
     padding: 0% 10%;
 }
+
+/* Opening Hours */
+#opening-hours .container {
+    padding: 5% 7%;
+}
+
+.opening-hours-header {
+    text-align: center;
+
+
+}
+.opening-hours-header h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: darkslategray;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.table span {
+    float: right;
+}
+
 /* Call to Action */
 #call-to-action .container {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 #call-to-action h3 {
@@ -150,7 +176,7 @@ hr {
 }
 /* Map */
 #map .container {
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 #map h3 {
@@ -170,12 +196,32 @@ hr {
 }
 
 /* Footer */
+#footer .container {
+    padding: 5% 7%;
+}
+
+#footer .social {
+    float: right;
+    display: inline;
+    padding: 0% 3%
+}
+
+#footer .social a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+#footer .back-home {
+    float: right;
+}
 
 /* Breakpoints */
 @media (max-width: 1155px) {
     #about img {
         margin-top: 2%;
         margin-bottom: 2%;
+    }
+    #title img {
+        margin-top: 15%;
     }
 }
 
@@ -196,6 +242,15 @@ hr {
     #title img {
         margin-bottom: auto;
         margin-top: auto;
+    }
+
+    #title p {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .title-img {
+        padding: 3rem;
     }
 
     #about img {
@@ -234,4 +289,19 @@ hr {
         line-height: 1.5;
         margin-top: 10px;
     }
+    /* Opening Hours */
+    #opening-hours h3, .days {
+        text-align: left;
+    }
+    /* Footer */
+    #footer .social {
+        float: none;
+        display: inline;
+        padding: 0% 3%
+    }
+
+    #footer .back-home {
+        float: none;
+    }
+
 }
